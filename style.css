@@ -94,8 +94,6 @@ header .navbar ul li a.active::before {
     left: 0;
 }
 
-/*  { background-color:#000; }
-.nav-transparent { background-color:transparent;} */
 
 /* Home Section */
 .home{
@@ -203,7 +201,7 @@ header .navbar ul li a.active::before {
     height: 2px;
     right: 30%;
     background-color: #febd01;
-    bottom: 0px;
+    bottom: 1px;
 }
 
 .about-me .section-title p{
@@ -332,7 +330,9 @@ header .navbar ul li a.active::before {
 /* Skills  */
 .skills {
     padding: 100px 15px;
+    margin: 5% 0 10% 0;
     background-color: #fff;
+
 }
 
 .skills .skills-content{
@@ -362,7 +362,7 @@ header .navbar ul li a.active::before {
     font-weight: 400;
     line-height: 24px;
     color: #838383;
-    margin: 15px 0 0px;
+    margin: 15px 0 35px;
 }
 
 .skills .skills-content .skill-box{
@@ -371,7 +371,7 @@ header .navbar ul li a.active::before {
     margin-bottom: 30px;
 }
 
-.skills .section-content .section-title h1{
+.skills .skills-content .section-title h1{
     display: inline-block;
     font-size: 35px;
     text-transform: uppercase;
@@ -381,15 +381,36 @@ header .navbar ul li a.active::before {
     position: relative;
 }
 
-.skills .section-content .section-title h1:before{
+.section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 10px;
+    position: relative;
+}
+
+.section-title h1:before{
     content: '';
     left: 0;
     position: absolute;
     height: 2px;
     right: 30%;
     background-color: #febd01;
-    bottom: 0px;
+    bottom: 1px;
 }
+
+.skills .skills-content .section-title h1:before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 1px;
+}
+
 
 .skills .skills-content .skill-box h6{
     font-size: 16px;
@@ -419,5 +440,116 @@ header .navbar ul li a.active::before {
     position: absolute;
     right: 0;
     top: -30px;
+}
+
+/* Portfolio Works */
+
+.portfolio{
+    background-color: #f5f8fd;
+    padding: 100px 15px;
+}
+
+
+
+.portfolio .section-title h1:before{
+    left: 30%;
+}
+
+.portfolio .filter-buttons{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.portfolio .filter-buttons ul{
+    list-style: none;
+    text-align: center;
+}
+
+.portfolio .filter-buttons ul li{
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.portfolio .filter-buttons ul li.active{
+    color: #febd01;
+    border-bottom: 2px solid #febd01;
+}
+
+.portfolio .filter-buttons{
+    margin-bottom: 25px;
+}
+
+.portfolio .portfolio-gallery{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio .portfolio-gallery .item{
+    background-color: #d5d5d5;
+    flex: 0 0 calc(33.33% - 10px);
+    max-width: calc(33.33% - 10px);
+    margin-bottom: 16px;
+    position: relative;
+    
+}
+
+.portfolio .portfolio-gallery .item img{
+    width: 100%;
+    display: block;
+}
+
+.portfolio .portfolio-gallery .item .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.portfolio .portfolio-gallery .item .overlay .fa{
+    height: 50px;
+    width: 50px;
+    background-color: #febd01;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: galleryIcon .8s ease;
+}
+
+@keyframes galleryIcon{
+    0%{
+        transform: translateY(-20px); opacity:0;
+    100%{
+        transform: translateY(0); opacity:1;
+    }
+    
+}
+
+.portfolio .portfolio-gallery .item .overlay h4{
+    margin-top: 15px;
+    font-size: 25px;
+    background-color: #febd01;
+    color: #fff;
+    font-weight: 600;
 }
 

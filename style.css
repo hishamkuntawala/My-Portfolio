@@ -539,11 +539,12 @@ header .navbar ul li a.active::before {
     line-height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    animation: galleryIcon .8s ease;
+    
 }
 
 .portfolio .portfolio-gallery .item:hover .overlay .fa{
-    
+    -webkit-animation: galleryIcon .8s ease;
+    animation: galleryIcon .8s ease;
 }
 
 @keyframes galleryIcon{
@@ -560,9 +561,14 @@ header .navbar ul li a.active::before {
     font-size: 25px;
     color: #fff;
     font-weight: 600;
-    animation: galleryText .8s ease;
+    
 }
 
+.portfolio .portfolio-gallery .item:hover .overlay h4{
+    -webkit-animation: galleryText .8s ease;
+    animation: galleryText .8s ease;
+    
+}
 
 @keyframes galleryText{
     0%{

@@ -1,17 +1,17 @@
-// let header = document.getElementsByTagName('header');
 
-// window.onscroll = function(){
-//     "use strict";
-//     if(document.body.scrollTop >= 200){
-//         header.classList.add('nav-colored');
-//         header.classList.remove('nav-transparent')
-//     }
-//     else {
-//         header.classList.add('nav-transparent');
-//         header.classList.remove('nav-colored');
-//     }
-// };
+const filterButtons=document.querySelector("#filter-btns").children;
+
+for(let i=0; i<filterButtons.length; i++ ) {
+    filterButtons[i].addEventListener("click",function(){
+        for(let j=0; j<filterButtons.length; j++){
+            filterButtons[j].classList.remove("active")
+        }
+        this.classList.add("active");
+    })
     
+}
+
+
 var header = document.querySelector('header'); // Identify target
 
 window.addEventListener('scroll', function(event) { // To listen for event
@@ -26,3 +26,4 @@ window.addEventListener('scroll', function(event) { // To listen for event
         header.style.transition= 'all .3s ease-in-out';
     }
 });
+

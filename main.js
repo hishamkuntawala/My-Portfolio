@@ -26,6 +26,10 @@ for(let i=0; i<filterButtons.length; i++ ) {
     
 }
 
+const closeLightbox=document.querySelector(".close-lightbox");
+closeLightbox.addEventListener("click", function(){
+    document.querySelector(".lightbox").classList.add('hide');
+})
 
 var header = document.querySelector('header'); // Identify target
 

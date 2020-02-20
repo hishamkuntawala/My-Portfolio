@@ -27,8 +27,31 @@ for(let i=0; i<filterButtons.length; i++ ) {
 }
 
 const closeLightbox=document.querySelector(".close-lightbox");
-closeLightbox.addEventListener("click", function(){
-    document.querySelector(".lightbox").classList.add('hide');
+const lightbox=document.querySelector(".lightbox");
+const lightboxImage=lightbox.querySelector("img")
+
+    lightbox.addEventListener('click',function(){
+        if(event.target!=lightboxImage){
+            lightbox.classList.remove('show');
+            lightbox.classList.add('hide');
+        }
+    })
+
+    closeLightbox.addEventListener("click", function(){
+        lightbox.classList.remove('show');
+        lightbox.classList.add('hide');
+})
+
+const gallery=document.querySelector(".portfolio-gallery");
+const galleryItem=gallery.querySelectorAll(".item");
+console.log(galleryItem)
+
+galleryItem.forEach(function(element){
+    element.querySelector(".fa-plus").addEventListener("click",function(){
+        lightbox.classList.remove('hide');
+        lightbox.classList.add('show');
+        lightboxImage.src=element.querySelector("img").getAttribute("src")
+    })
 })
 
 var header = document.querySelector('header'); // Identify target

@@ -15,7 +15,7 @@ body{
 }
 
 .container {
-    max-width: 1500px;
+    max-width: 1400px;
     margin: auto;;
 }
 
@@ -65,8 +65,10 @@ header {
     left: 0px;
     right:0px;
     border-bottom: 1px solid #534550;
-    padding: 0px 15px;
-    z-index: 10;
+    padding: 0px 15px;<div class="img">
+    <img src="Images/Skills.jpg" alt="skills"/>
+</div>
+    z-index: 11;
 }
 
 header.fixed{
@@ -91,7 +93,9 @@ header .row{
 }
 header .brand-name{
     margin-right: 150px;
-}
+}<div class="img">
+<img src="Images/Skills.jpg" alt="skills"/>
+</div>
 header .brand-name a{
     text-decoration: none;
     font-size: 22px;
@@ -244,7 +248,7 @@ header .navbar ul li a.active::before {
 /* About Me */
 .about-me {
     padding: 100px 15px;
-    background-color: #fff;
+    background-color: #f5f8fd;
 }
 
 .about-me .section-title{ 
@@ -362,7 +366,7 @@ header .navbar ul li a.active::before {
 .about-me .about-content .text .social-link {
     padding-top: 30px;
     position: absolute;
-    margin-top: 23%;
+    margin-top: 16%;
 }
 
 .about-me .about-content .text .social-link a {
@@ -395,131 +399,82 @@ header .navbar ul li a.active::before {
 }
 
 /* Skills  */
-.skills {
-    padding: 100px 15px;
-    margin: 5% 0 10% 0;
-    background-color: #fff;
-
-}
-
-.skills .skills-content{
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding-right: 40px;
-}
-
-.skills .img {
-    background-color: blue;
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.align-items-center{
-    align-items: center;
-
-}
-
-.skills .img img {
-    width: 100%;
-    display: block;
-}
-
-.skills .skills-content .section-title p{
+.skills{
+    padding:12% 12%;
+    background-color: #ffffff;
+   }
+   .skills .skills-content{
+       flex: 0 0 50%;
+       max-width: 50%;
+       padding-right:40px;
+   }
+   .skills .img{
+       flex: 0 0 50%;
+       max-width: 50%;
+   }
+   .align-items-center{
+       align-items: center;
+   }
+   .skills .img img{
+     width: 100%;
+     display: block;
+   }
+   .skills .skills-content .section-title p{
     font-size: 15px;
     font-weight: 400;
-    line-height: 24px;
-    color: #838383;
-    margin: 15px 0 35px;
-}
-
-.skills .skills-content .skill-box{
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 30px;
-}
-
-.skills .skills-content .section-title h1{
-    display: inline-block;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #000;
-    margin: 0 0 10px;
-    position: relative;
-}
-
-.section-title h1{
-    display: inline-block;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #000;
-    margin: 0 0 10px;
-    position: relative;
-}
-
-.section-title h1:before{
-    content: '';
-    left: 0;
-    position: absolute;
-    height: 2px;
-    right: 30%;
-    background-color: #febd01;
-    bottom: 1px;
-}
-
-.skills .skills-content .section-title h1:before{
-    content: '';
-    left: 0;
-    position: absolute;
-    height: 2px;
-    right: 30%;
-    background-color: #febd01;
-    bottom: 1px;
-}
-
-
-.skills .skills-content .skill-box h6{
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-    margin: 0 0 8px;
-}
-
-.skills .skills-content .skill-box .skill-bar{
-    height: 5px;
-    background-color: #eee;
-    position: relative;
-}
-
-.skills .skills-content .skill-box .skill-bar .skill-bar-in{
-    background-color: #febd01;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-}
-
-.skills .skills-content .skill-box .skill-bar .skill-bar-in span{
-    color: #838383;
-    font-size: 16px;
-    font-weight: 400;
-    position: absolute;
-    right: 0;
-    top: -30px;
-}
+    line-height:24px;
+    color:#838383;
+    margin:15px 0 0;
+   }
+   
+   .skills .skills-content .skill-box{
+       flex:0 0 100%;
+       max-width: 100%;
+       margin-bottom:30px;
+   }
+   
+   .skills .skills-content .skill-box h6{
+       font-size: 16px;
+       font-weight: 500;
+       color:#000000;
+       margin:0 0 8px;
+   }
+   
+   .skills .skills-content .skill-box .skill-bar{
+       height:5px;
+       background-color: #eeeeee;
+       position: relative;
+   }
+   
+   .skills .skills-content .skill-box .skill-bar .skill-bar-in{
+       background-color:#febd01;
+       position: absolute;
+       left:0;
+       top:0;
+       height: 100%;
+   }
+   
+   .skills .skills-content .skill-box .skill-bar .skill-bar-in span{
+       color:#838383;
+       font-size: 16px;
+       font-weight: 400;
+       position: absolute;
+       right:0;
+       top:-30px;
+   }
 
 /* Portfolio Works */
 
 .portfolio{
     background-color: #f5f8fd;
-    padding: 100px 0 px;
+    padding: 100px 0px;
 }
 
 
 
 .portfolio .section-title h1:before{
-    left: 30%;
+    left: 20%;
+    right: 20%;
 }
 
 .portfolio .filter-buttons{
@@ -808,7 +763,8 @@ header .navbar ul li a.active::before {
 }
 .contact-us .contact-form .button{
 	flex:0 0 100%;
-	max-width: 100%;
+    max-width: 100%;
+    padding-top: 20px;
 }
 .contact-us .contact-form .button a{
     border-radius:4px;
@@ -881,6 +837,22 @@ footer .social a:hover{
 
 }
 
+/* Responsiveness Section */
+
+.ham-burger .fa{
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    display: inline-block;
+    height: 30px;
+    width: 35px;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    border: 1px solid #eeeeee;
+}
 
 @media (max-width: 991px){
     .home .home-content .block h1{
@@ -888,11 +860,164 @@ footer .social a:hover{
     }
 }
 
-@media(max-width: 767px){
+@media(max-width: 800px){
+
+    .home .home-content .block h1{
+        font-size: 40px;
+        transition:all .5s ease-in;
+        
+    }
+
+    .home .home-content .block h3{
+        font-size: 25px;
+        transition:all .5s ease-in;
+        
+        
+    }
+
+    .home .home-content .block h6{
+        font-size: 15px;
+        transition:all .5s ease-in;
+        
+        
+    }
+
+    .home .home-content .block{
+        margin-top: 150px;
+    }
+
+
     header{
         padding: 15px;
+        position: fixed;
+        background-color: #fff;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+    header .brand-name a{
+        color: #000000;
+    }
+    .ham-burger .fa{
+        display: inline-block;
     }
     .navbar{
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        left: 0px;
+        top: 60px;
+        padding: 15px;
+        border-top: 1px solid #eee;
         display: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navbar.show{
+        display: block;
+    }
+
+    header .navbar ul li{
+        display: block;
+        margin-left: 0;
+    }
+    header .navbar ul li a{
+        line-height: 42px;
+        color: #000;
+    }
+    header .navbar ul li a::before{
+        background-color: #febd01;
+    }
+
+    .about-me .about-content .text{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+    .about-me .about-content .img{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about-me .about-content .text .social-link {
+        padding-top: 30px;
+        position: absolute;
+        margin-top: 28%;
+    
+
+    .skills .skills-content{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0px;
+    }
+
+    .skills .img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .portfolio .portfolio-gallery .item{
+        flex: 0 0 50%;
+        max-width: 50%;
+        position: relative;
+        padding: 8px;
+    }
+
+    .message-text .text{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    
+
+    .message-text .button{
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .contact-us .contact-form{
+        padding: 40px 20px;
+    }
+
+    .contact-us .contact-form .col-6{
+        flex: 0 0 100%;
+        max-width: 100%;;
+    }
+
+    .contact-us .contact-form .button{
+        flex:0 0 100%;
+        max-width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+@media(max-width: 500px){
+    .home .home-content .block h1{
+        font-size: 30px;
+        transition:all .5s ease-in;  
+    }
+
+    .home .home-content .block h3{
+        font-size: 20px;
+        transition:all .5s ease-in;  
+    }
+
+    .home .home-content .block h6{
+        font-size: 13px;
+        transition:all .5s ease-in;
+    }
+
+    .home .home-content .block{
+        margin-top: 150px;
+        padding-left: 20px;
+    }
+    .portfolio .portfolio-gallery .item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about-me .about-content .text .info .list p{
+        flex: 0 0 100%;
     }
 }

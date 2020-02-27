@@ -1,4 +1,6 @@
 
+// gallery Item Filler
+
 const filterButtons=document.querySelector("#filter-btns").children;
 const items=document.querySelector(".portfolio-gallery").children;
 
@@ -25,6 +27,8 @@ for(let i=0; i<filterButtons.length; i++ ) {
     })
     
 }
+
+// LightBox
 
 const closeLightbox=document.querySelector(".close-lightbox");
 const lightbox=document.querySelector(".lightbox");
@@ -54,6 +58,8 @@ galleryItem.forEach(function(element){
     })
 })
 
+// Header Navbar Shahab & Ahmed
+
 var header = document.querySelector('header'); // Identify target
 
 window.addEventListener('scroll', function(event) { // To listen for event
@@ -62,7 +68,11 @@ window.addEventListener('scroll', function(event) { // To listen for event
     this.console.log(window.scrollY)
     if (window.scrollY <= 150) { // Just an example
         header.style.backgroundColor = 'transparent'; // or default color
-    } 
+    }
+    if (window.scrollY >=950){
+        header.style.backgroundColor = '#fff';
+        header.style = "#000";
+    }
     else  {
         header.style.backgroundColor = '#9e5f40';
         
@@ -96,5 +106,14 @@ const navbar= document.querySelector(".navbar");
                 a[i].classList.remove('active');
             }
             this.classList.add("active")
+            // document.querySelector(".navbar").classList.toggle("show") // If I want to close the drop down bar whenever scrolling.
         })
     })
+
+// ham-burger
+
+const hamBurger= document.querySelector(".ham-burger");
+
+hamBurger.addEventListener("click",function(){
+    document.querySelector(".navbar").classList.toggle("show")
+})
